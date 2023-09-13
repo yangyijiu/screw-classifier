@@ -68,7 +68,7 @@ Below are the comparison images before and after enhancement:
 Start training using the following command:
 
 ```bash
-python train_classifier.py --good_root ./archive-diff/train/good --not_good_root ./archive-diff/train/not-good --test_good_root ./archive-diff/test/good --test_not_good_root ./archive-diff/test/not-good --batch_size 100 --epochs 200 --learning_rate 5e-5 --train_split 0.8 --val_split 0.2
+python train_classifier.py --good_root archive-enhance/train/good --not_good_root archive-enhance/train/not-good --test_root archive-enhance/test --batch_size 100 --epochs 200 --learning_rate 5e-5 --train_split 0.8 --val_split 0.2
 ```
 
 ### 5. Monitor Training Process
