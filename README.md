@@ -45,7 +45,7 @@ python Data_enhancement/screw_alignment.py --old ../archive --align ../archive-a
 
 Below are the comparison images before and after alignment:
 
-| ![Before Alignment](path_to_before_image) | ![After Alignment](/Example pictures/After Alignment.png) | ![After Alignment with Line](/Example pictures/After Alignment with Line.png) |
+| ![Before Alignment](/Example_pictures/After_Alignment.png) | ![After Alignment](/Example_pictures/After_Alignment.png) | ![After Alignment with Line](/Example pictures/After_Alignment_Line.png) |
 |:---:|:---:|:---:|
 | Original Image | Aligned Image | Aligned Image with Auxiliary Line |
 
@@ -59,7 +59,7 @@ python enhance_dataset.py
 
 Below are the comparison images before and after enhancement:
 
-| ![Before Enhancement](/Example pictures/Before Enhancement.png) | ![After Enhancement](/Example pictures/After Enhancement.png) |
+| ![Before Enhancement](/Example_pictures/Before_Enhancement.png) | ![After Enhancement](/Example_pictures/After_Enhancement.png) |
 |:---:|:---:|
 | Original Image | Enhanced Image |
 
