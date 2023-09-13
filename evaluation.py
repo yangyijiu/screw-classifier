@@ -24,7 +24,6 @@ def evaluate(model, loader):
             false_positives += ((1 - labels) * predicted).sum().float()
             false_negatives += (labels * (1 - predicted)).sum().float()
 
-    print(true_positives, false_positives, false_negatives)
     return f1_score(true_positives, false_positives, false_negatives)
 
 
