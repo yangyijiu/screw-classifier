@@ -37,7 +37,9 @@ The enhancement process is divided into two steps:
 
 #### Step 1: Screw Alignment
 
-We provide a script, `screw_alignment.py`, located in the `Data_enhancement` directory. This script will align the screws in the dataset. If the `draw_line` flag is set to `true`, it can draw the standard auxiliary lines on the images. However, it's recommended not to draw these lines during enhancement. The alignment details will be saved in `rotation_angle.pkl` for further use in enhancement. The aligned images will be saved in the `./archive-align` directory.
+We provide a script `screw_alignment.py`, this script will align the screws in the dataset. If the `draw_line` flag is set to `true`, it can draw the standard auxiliary lines on the images. 
+However, it's recommended not to draw these lines during enhancement. The alignment details will be saved in `rotation_angle.pkl` for further use in enhancement. 
+The aligned images will be saved in the `./archive-align` directory.
 
 ```bash
 python screw_alignment.py
@@ -51,7 +53,7 @@ Below are the comparison images before and after alignment:
 
 #### Step 2: Image Enhancement
 
-We provide another script, `enhance_dataset.py`, that enhances the images, making defects more pronounced. The enhanced images will be saved in the `./archive-enhance` directory.
+We provide another script `enhance_dataset.py`, that enhances the images, making defects more pronounced. The enhanced images will be saved in the `./archive-enhance` directory.
 
 ```bash
 python enhance_dataset.py
