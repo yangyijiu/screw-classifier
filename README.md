@@ -40,7 +40,7 @@ The enhancement process is divided into two steps:
 We provide a script, `screw_alignment.py`, located in the `Data_enhancement` directory. This script will align the screws in the dataset. If the `draw_line` flag is set to `true`, it can draw the standard auxiliary lines on the images. However, it's recommended not to draw these lines during enhancement. The alignment details will be saved in `rotation_angle.pkl` for further use in enhancement. The aligned images will be saved in the `./archive-align` directory.
 
 ```bash
-python Data_enhancement/screw_alignment.py --old ../archive --align ../archive-align --draw_line
+python Data_enhancement/screw_alignment.py
 ```
 
 Below are the comparison images before and after alignment:
