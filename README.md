@@ -54,7 +54,7 @@ Below are the comparison images before and after alignment:
 We provide another script, `enhance_dataset.py`, that enhances the images, making defects more pronounced. The enhanced images will be saved in the `./archive-enhance` directory.
 
 ```bash
-python enhance_dataset.py
+python Data_enhancement/enhance_dataset.py
 ```
 
 Below are the comparison images before and after enhancement:
