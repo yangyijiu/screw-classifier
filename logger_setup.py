@@ -17,7 +17,7 @@ logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime
 # Set up TensorBoard writer
 writer = SummaryWriter(log_dir=run_dir)
 
-def log_metrics(epoch, total_loss, train_loader, model, val_loader,test_loader, writer):
+def log_metrics(epoch, total_loss, train_loader, model, val_loader,test_loader, writer, args):
     avg_loss = total_loss / len(train_loader)
     val_f1 = evaluate(model, val_loader)
     test_f1 = evaluate(model, test_loader)
