@@ -65,7 +65,7 @@ def subtract_closest_good_image(angle_buckets):
             difference = cv2.convertScaleAbs(difference, alpha=3.5, beta=0)
 
             heatmap = cv2.cvtColor((plt.get_cmap('inferno')(difference) * 255).astype(np.uint8), cv2.COLOR_RGBA2BGR)
-            weighted_overlayed = apply_heatmap_to_image(result_img, heatmap, alpha=0.6)
+            weighted_overlayed = apply_heatmap_to_image(result_img, heatmap, alpha=0.5)
 
             result_dir = os.path.join(enhance_folder, os.path.relpath(dirpath, src_folder))
             os.makedirs(result_dir, exist_ok=True)
